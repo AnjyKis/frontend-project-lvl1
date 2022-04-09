@@ -19,7 +19,7 @@ export default () => {
     console.log(`Question: ${value}`);
     const guess = readlineSync.question('Your answer: ');
     const isRight = check(guess, isEven);
-    const result = isRight ? 'Correct!' : `'${guess}' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, Bill!`;
+    const result = isRight ? 'Correct!' : `'${guess}' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, ${name}`;
     console.log(result);
     if (!isRight) {
       return;
