@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import engine from './index.js';
+import engine from '../index.js';
 
 const question = 'Answer "yes" if the number is even, otherwise answer "no".';
 
