@@ -27,3 +27,7 @@ brain-progression
 brain-gcd
 brain-prime
 ```
+
+## Link of asciinema
+[link of asciinema](https://asciinema.org/a/WfMmkyeVstGim9hKFTAqwYPO5)
+
