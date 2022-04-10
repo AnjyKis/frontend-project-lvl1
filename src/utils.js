@@ -26,3 +26,25 @@ export const getProgression = (start, step) => {
   }
   return result;
 };
+
+export const isPrime = (num) => {
+  if (num === 1) {
+    return false;
+  }
+  let counter = 1;
+  for (let divisor = 2; divisor <= num; divisor++) {
+    if (num % divisor === 0) {
+      counter++;
+    } 
+  }
+  if (counter === 2) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+export const isEven = (number) => {
+  const result = number % 2 === 0;
+  return result;
+};
