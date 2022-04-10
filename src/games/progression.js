@@ -7,7 +7,7 @@ const question = 'What number is missing in the progression?';
 export default () => {
   const condition = () => {
     const start = getInteger();
-    const step = getInteger(1, 10);
+    const step = getInteger(1, 5);
     const unknownIndex = getInteger(5, 10);
     const collection = getProgression(start, step);
     const rightAnswer = collection[unknownIndex];

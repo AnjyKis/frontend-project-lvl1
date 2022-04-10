@@ -7,8 +7,8 @@ const operators = ['+', '-', '*'];
 
 export default () => {
   const condition = () => {
-    const randomNumber1 = getInteger();
-    const randomNumber2 = getInteger();
+    const randomNumber1 = getInteger(0, 10);
+    const randomNumber2 = getInteger(0, 10);
     const operatorIndex = getInteger(0, 3);
     const operator = operators[operatorIndex];
     console.log(`Question: ${randomNumber1} ${operator} ${randomNumber2}`);
