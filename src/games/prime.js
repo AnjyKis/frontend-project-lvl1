@@ -14,4 +14,4 @@ export default () => {
     return [result, guess, rightAnswer];
   };
   engine(question, 3, condition);
-}
+};

@@ -32,16 +32,16 @@ export const isPrime = (num) => {
     return false;
   }
   let counter = 1;
-  for (let divisor = 2; divisor <= num; divisor++) {
+  let result = false;
+  for (let divisor = 2; divisor <= num; divisor += 1) {
     if (num % divisor === 0) {
-      counter++;
-    } 
+      counter += 1;
+    }
   }
   if (counter === 2) {
-    return true;
-  } else {
-    return false;
+    result = true;
   }
+  return result;
 };
 
 export const isEven = (number) => {
