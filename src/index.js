@@ -9,7 +9,7 @@ export default (question, rounds, condition) => {
     if (answer) {
       console.log('Correct!');
     } else {
-      console.log(`'${guess}' is wrong answer ;(. Correct answer was ${error}. \nLet's try again`);
+      console.log(`'${guess}' is wrong answer ;(. Correct answer was '${error}'. \nLet's try again`);
       return;
     }
   }

@@ -1,15 +1,15 @@
 import readlineSync from 'readline-sync';
 import engine from '../index.js';
+import { getInteger } from '../utils.js';
 
 const question = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
-const randomOperator = () => Math.floor(Math.random() * (3 - 0) + 0);
 
 export default () => {
   const condition = () => {
-    const randomNumber1 = Math.floor(Math.random() * 100);
-    const randomNumber2 = Math.floor(Math.random() * 100);
-    const operatorIndex = randomOperator();
+    const randomNumber1 = getInteger();
+    const randomNumber2 = getInteger();
+    const operatorIndex = getInteger(0, 3);
     const operator = operators[operatorIndex];
     console.log(`Question: ${randomNumber1} ${operator} ${randomNumber2}`);
     const guess = Number(readlineSync.question('Your answer: '));
