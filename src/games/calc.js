@@ -24,6 +24,8 @@ export default () => {
       case '*':
         rightAnswer = randomNumber1 * randomNumber2;
         break;
+      default:
+        break;
     }
     const result = guess === rightAnswer;
     return [result, guess, rightAnswer];

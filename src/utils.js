@@ -1,6 +1,6 @@
 export const getInteger = (min = 0, max = 100) => {
   const result = Math.floor(Math.random() * (max - min) + min);
-  return result; 
+  return result;
 };
 
 export const grandCommonDivisor = (num1, num2) => {
@@ -8,9 +8,9 @@ export const grandCommonDivisor = (num1, num2) => {
   let operand2 = num2;
   while (operand1 !== 0 && operand2 !== 0) {
     if (operand1 > operand2) {
-      operand1 = operand1 % operand2;
+      operand1 %= operand2;
     } else {
-      operand2 = operand2 % operand1;
+      operand2 %= operand1;
     }
   }
   return operand1 + operand2;
